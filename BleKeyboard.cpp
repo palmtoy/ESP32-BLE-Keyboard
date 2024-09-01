@@ -132,6 +132,7 @@ void BleKeyboard::begin(void)
   #else
     pSecurity->setAuthenticationMode(ESP_LE_AUTH_REQ_SC_MITM_BOND);
   #endif
+  pSecurity->setCapability(ESP_IO_CAP_NONE);
 
 #endif // USE_NIMBLE
 
